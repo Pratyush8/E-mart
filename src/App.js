@@ -3,7 +3,7 @@ import Navbar from "./component/navbar/Navbar";
 import Products from "./component/products/Products";
 import Footer from "./component/footer/Footer";
 import Home from "./component/Home/Home";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductDetail from "./component/productdetail/ProductDetail";
 import Cart from "./component/cart/Cart";
 import OrderPlaced from "./component/orderplaced/OrderPlaced";
@@ -15,16 +15,16 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/products" component={Products} />
-        <Route path="/cart" component={Cart} />
-        <Route path="/orderplaced" component={OrderPlaced} />
-        <Route path="/shipping" component={ShippingDetails} />
-        <Route path="/shopping" component={ShoppingCart} />
-        <Route path="/payment" component={Payment} />
-        <Route exact path="/products/:id" component={ProductDetail} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/orderplaced" element={<OrderPlaced />} />
+        <Route path="/shipping" element={<ShippingDetails />} />
+        <Route path="/shopping" element={<ShoppingCart />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/products/:id" element={<ProductDetail />} />
+      </Routes>
       <Footer />
     </Router>
   );
