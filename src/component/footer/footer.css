@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: rgb(63, 183, 253);
+  height: auto;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  /* color: rgb(250, 250, 115); */
+  color: rgb(250, 250, 115);
+  padding: 1rem;
+  margin: 0 1rem;
+}
+.footer h5 {
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+  color: rgb(250, 250, 115);
+}

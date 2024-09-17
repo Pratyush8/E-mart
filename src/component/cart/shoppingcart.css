@@ -1,0 +1,17 @@
+.img-size {
+  height: 8vw;
+}
+
+.input {
+  width: 10vw;
+  height: 30px;
+}
+
+.title-box {
+  height: auto;
+}
+.title,
+desc {
+  width: 100%;
+  line-height: 1.2;
+}
